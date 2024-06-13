@@ -1,71 +1,89 @@
 % Титульный лист (ГОСТ Р 7.0.11-2001, 5.1)
 \thispagestyle{empty}
 \begin{center}
-\thesisOrganization
+%\thesisOrganization
+    МИНОБРНАУКИ РОССИИ\\
+    федеральное государственное автономное образовательное учреждение\\
+    высшего образования\\
+    «Омский государственный университет им.~Ф.~М.~Достоевского»\\
+    Кафедра информационной безопасности
 \end{center}
 %
 \vspace{0pt plus4fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
+\begin{flushright}
+    УТВЕРЖДАЮ\\
+    Заведующий кафедрой\\
+    Горев А.И.\\
+    <<\underline{\hspace{0.3in}}>> \underline{\hspace{1in}}~2024 г.
+
+\end{flushright}
 %
-\vspace{0pt plus6fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
-\begin{center}
-{\large \thesisAuthor}
-\end{center}
+%\vspace{0pt plus6fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
+%\begin{center}
+%{\large \thesisAuthor}
+%\end{center}
 %
 \vspace{0pt plus1fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
 \begin{center}
-\textbf {\large %\MakeUppercase
-\thesisTitle}
+     \textbf{ %\MakeUppercase
+    \thesisTitle}
 
-\vspace{0pt plus2fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
-{%\small
-Направление \thesisSpecialtyNumber\ "---
+    \vspace{0pt plus2fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
+    {%\small
+        Выпускная квалификационная работа\\
+        по направлению 09.03.03 <<Прикладная информатика>>\\
+        профиль: <<Прикладная информатика в информационной сфере>>
+    }
 
-<<\thesisSpecialtyTitle>>
-}
+    \ifdefined\thesisSpecialtyTwoNumber
+    {%\small
+        Специальность \thesisSpecialtyTwoNumber\ "---
 
-\ifdefined\thesisSpecialtyTwoNumber
-{%\small
-Специальность \thesisSpecialtyTwoNumber\ "---
+        <<\thesisSpecialtyTwoTitle>>
+    }
+    \fi
 
-<<\thesisSpecialtyTwoTitle>>
-}
-\fi
-
-\vspace{0pt plus2fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
+    \vspace{0pt plus2fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
 
 \end{center}
 %
 \vspace{0pt plus4fill} %число перед fill = кратность относительно некоторого расстояния fill, кусками которого заполнены пустые места
 \begin{flushright}
-\ifdefined\supervisorTwoFio
-Научные руководители:
+    \ifdefined\supervisorTwoFio
+    Научные руководители:
 
-\supervisorRegalia
+    \supervisorRegalia
 
-\ifdefined\supervisorDead
-\framebox{\supervisorFio}
-\else
-\supervisorFio
-\fi
+    \ifdefined\supervisorDead
+    \framebox{\supervisorFio}
+    \else
+    \supervisorFio
+    \fi
 
-\supervisorTwoRegalia
+    \supervisorTwoRegalia
 
-\ifdefined\supervisorTwoDead
-\framebox{\supervisorTwoFio}
-\else
-\supervisorTwoFio
-\fi
-\else
-Научный руководитель:
+    \ifdefined\supervisorTwoDead
+    \framebox{\supervisorTwoFio}
+    \else
+    \supervisorTwoFio
+    \fi
+    \else
+    Научный руководитель:\\
+    к.~т.~н, доцент\\
+    \underline{\hspace{1.5in}}~Болдовская Т.Е.\\
+    <<\underline{\hspace{0.3in}}>> \underline{\hspace{1in}}~2024 г.\\
+    Выполнил:\\
+    студент~группы~МПБ-О-001\\
+    \underline{\hspace{1.5in}}~Гресь В.И.\\
+    <<\underline{\hspace{0.3in}}>> \underline{\hspace{1in}}~2024 г.
+%    \supervisorRegalia
 
-\supervisorRegalia
-
-\ifdefined\supervisorDead
-\framebox{\supervisorFio}
-\else
-\supervisorFio
-\fi
-\fi
+    \ifdefined\supervisorDead
+%    \framebox{\supervisorFio}
+    \else
+%    \supervisorFio
+    \fi
+    \fi
 
 \end{flushright}
 %
