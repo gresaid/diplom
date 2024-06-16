@@ -342,9 +342,9 @@ public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
 Для создания самоподписанного сертификата можно воспользоваться инструментами, такими как `keytool` или `openssl`.
 Например, для создания сертификата с использованием `keytool`:
 
-\begin{verbatim}
+\begin{lstlisting}
 keytool -genkeypair -alias myalias -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore keystore.p12 -validity 3650
-\end{verbatim}
+\end{lstlisting}
 
 Этот процесс создаст файл хранилища ключей `keystore.p12`, который будет использоваться в приложении.
 
